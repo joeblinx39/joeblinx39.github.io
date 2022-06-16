@@ -65,24 +65,3 @@ grid-area: e;
     font-size: 25px;
     font-weight: bold;
   }
-@media (max-width: 375px){
-main{
-   main{
-    display: grid;
-    grid-template-areas: 
-    'a a b'
-    'a a b'
-    'c d d'
-    'c e e'
-    ;
-    gap: 10px;
-    width: 100%;
-    margin: auto;
-    height: 80%;
-}
-    main div {
-    padding: 2em;
-    text-align: center;
-
-}
-}
