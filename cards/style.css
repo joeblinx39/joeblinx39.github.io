@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&family=Big+Shoulders+Display&display=swap");
+/** colors **/
+:root{
+    /** Primary **/
+    --sedan: hsl(31, 77%, 52%);
+    --suv: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    /** Neutral **/
+    --para: hsla(0, 0%, 100%, 0.75);
+    --primary: hsl(0, 0%, 95%);
+}
+/* Global styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: var(--primary);
+  }
+.sedan{
+    background: var(--sedan);
+    border-radius: 5px 0 0 5px;
+}
+.suv{
+    background: var(--suv);
+}
+.luxury{
+    background: var(--luxury);
+    border-radius: 0 5px 5px 0;
+}
+.container{
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+.card{
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 450px;  
+  
+}
+.container:after{
+content: "";
+display: table;
+clear: both;
+}
+img{
+    margin-left: 30px;
+    margin-top: 30px;  
+}
+h4{
+    margin-left: 32px;
+    margin-top: 40px;
+    color: var(--primary);
+    font-family: "",;
+    font-weight: 700;
+}
+.text{
+    width: 190px;
+    margin-left: 30px;
+    margin-top: 40px;
+    color: var(--para);
+
+}
+.btn{
+    margin-left: 30px;
+    margin-top: 70px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px; 
+    background: var(--primary); 
+
+}
+.sedan .btn{
+    color: var(--sedan);
+}
+.sedan .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+}
+.suv .btn{
+    color: var(--suv);
+    margin-top: 90px;
+}
+.suv .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+}
+
+.luxury .btn{
+    color: var(--luxury);
+}
+.luxury .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+.container{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.sedan{
+    background: var(--sedan);
+    border-radius: 5px 5px 0 0;
+}
+.luxury{
+    background: var(--luxury);
+    border-radius: 0 0 5px 5px;
+}
+.sedan .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+.suv .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+.luxury .btn:hover{
+    border-radius: 25px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+html {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: var(--primary);
+  }
+}
+
+.link-border-wrap {
+    max-width: 100px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, var(--suv), var(--sedan), var(--luxury)) ;
+    padding: 3px;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+  
+  .link  {
+    background: var(--primary);
+    padding: 1.2rem;
+    text-align: center;
+  }
+  a {
+    color: var(--luxury);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
